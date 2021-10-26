@@ -104,22 +104,29 @@
  </table>
  </form>
  
- <?php
- echo "<h2>Data yang anda isi:</h2>";
- echo $nama;
- echo "<br>";
+
+
+ <h2> Data yang anda isi : </h2>
+        <table width='80%' border=1>
+            <tr>
+                <th>Nama</th> <th>gender</th> <th>Email</th> <th>Website</th> <th>Comment</th> 
+            </tr>
+            <?php 
+                echo "<tr>";
+                echo "<td>".$nama."</td>";
+                echo "<td>".$gender."</td>";
+                echo "<td>".$email."</td>";
+                echo "<td>".$website."</td>";
+                echo "<td>".$comment."</td>"; 
+            ?>
+        </table>
  
- echo $email;
- echo "<br>";
- 
- echo $website;
- echo "<br>";
- 
- echo $comment;
- echo "<br>";
- 
- echo $gender;
- ?>
+
+
+
+
+
+
  
  </body>
 </html>
